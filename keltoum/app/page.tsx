@@ -5,9 +5,13 @@ import {
   Home, Search, User, Menu, X, ChevronRight, 
   Sparkles, Camera, Video, Star, MessageCircle, PenTool,
   TrendingUp, Heart, ArrowRight, Check, Play, Zap,
-  ChevronLeft, Instagram, Youtube
+  ChevronLeft, Instagram, Youtube,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+
+import Footer from "../compo/footer";
+import FAQSection from '../compo/faq';
+import TestimonialsSection from '@/compo/recomm';
 
 export default function UGCWebsiteEnhanced() {
   return (
@@ -15,7 +19,10 @@ export default function UGCWebsiteEnhanced() {
       <Navbar />
       <HeroSection />
       <UGCShowcase />
-      <FeaturesSection />
+      <TestimonialsSection />
+      <FAQSection />
+      {/* <FeaturesSection /> */}
+      <Footer />
     </div>
   );
 }
